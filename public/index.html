@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Society Complaint Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#complaints">Complaint Area</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+      <li><a href="#updates">Updates</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h2>Welcome to Our Society Portal</h2>
+    <p>Total Houses: <strong>85</strong></p>
+    <p>Total Residents: <strong>360+</strong></p>
+    <p>Board Members: <strong>President, Treasurer, Secretary</strong></p>
+  </section>
+
+  <!-- Complaint Section -->
+  <section id="complaints" class="section">
+    <h2>Complaint Area</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Register</button>
+
+    <div id="main-section" style="display:none;">
+      <h3>Submit a Complaint</h3>
+      <select id="category">
+        <option value="Streetlight">Streetlight</option>
+        <option value="Sewage">Sewage</option>
+        <option value="Road">Road</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea id="description" placeholder="Enter your complaint here"></textarea>
+      <button onclick="submitComplaint()">Submit Complaint</button>
+
+      <h3>Your Complaints</h3>
+      <ul id="complaint-list"></ul>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </section>
+
+  <!-- Forms Section -->
+  <section id="forms" class="section">
+    <h2>Board Member Registration Form</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea placeholder="Why do you want to become a board member?" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="section">
+    <h2>FAQs & Important Info</h2>
+    <p><strong>Councillor Name:</strong> Mr. Ravi Sharma</p>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><a href="https://www.india.gov.in/" target="_blank">Visit gov.in for Schemes & Services</a></p>
+    <h3>Board Member Contact:</h3>
+    <ul>
+      <li>President: Mrs. Priya Singh – +91-9876500011</li>
+      <li>Treasurer: Mr. Arvind Rao – +91-9876500022</li>
+      <li>Secretary: Ms. Sneha Das – +91-9876500033</li>
+    </ul>
+  </section>
+
+  <!-- Updates Section -->
+  <section id="updates" class="section">
+    <h2>Latest Updates & Announcements</h2>
+    <ul>
+      <li>📣 Free full-body health checkup on 20th July at society ground</li>
+      <li>🎓 Children’s scholarship registration starts 25th July – apply at the office</li>
+      <li>🚧 Road repair work in A Block starts next week</li>
+    </ul>
+  </section>
+
+  <!-- Link JS -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

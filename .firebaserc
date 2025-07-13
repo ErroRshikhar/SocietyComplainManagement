@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "management-572a9",
+    "\\society-complaint-portal": "society-4c3cb",
+    "society-complaint-portal": "management-572a9"
+  },
+  "targets": {},
+  "etags": {}
+}
